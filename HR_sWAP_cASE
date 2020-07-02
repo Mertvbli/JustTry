@@ -1,0 +1,5 @@
+def swap_case(s):
+    result = ""
+    for phr in s:
+        result += phr
+    return result.swapcase()

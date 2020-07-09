@@ -1,0 +1,8 @@
+def solve(s):
+    say = ""
+    words = s.split()
+    for word in words:
+        say += word.capitalize() + " "
+    return say
+
+print(solve("hello world")) #example

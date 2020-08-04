@@ -1,0 +1,86 @@
+# 6.7 Humans
+
+human_0 = {'first_name': 'Daniil', 'last_name': 'Rytikov', 'age': 22, 'city': 'Krasnoyarsk'}
+human_1 = {'first_name': 'Mihail', 'last_name': 'Saprikin', 'age': 25, 'city': 'Krasnoyarsk'}
+human_2 = {'first_name': 'Vitaliy', 'last_name': 'Vasiliev', 'age': 23, 'city': 'Pskov'}
+
+peoples = [human_0, human_1, human_2]
+for people in peoples:
+    print(people)
+
+print(". . .")
+
+print(f"The total number of peoples: {len(peoples)}\n")
+
+# 6.8 Pets
+
+Ryshik = {'kind': 'cat',
+          'owner_name': 'Igor',
+          }
+
+Tori = {'kind': 'dog',
+          'owner_name': 'Lena and Igor',
+          }
+
+pets = [Ryshik, Tori]
+
+for pet in pets:
+    print(pet)
+
+print(f"\nThe total number of pets: {len(pets)}\n")
+
+# 6.9 Favorite places
+
+favorite_places = {'Russia': ['Igor', 'Lena'],
+                   'German': ['Igor'],
+                   'Japan': ['Mihail', 'Katya', 'Nastya'],
+                   }
+for place, peoples in favorite_places.items():
+    print(f"\n{place.title()} is  favorite place:")
+    for people in peoples:
+        print(f"\t-{people.title()}")
+
+# 6.10 Favorite numbers
+
+favorite_numbers = {
+    'Igor': [2, 5],
+    'Leha': [25, 16],
+    'Artur': [6, 90],
+    'Daniil': [69, 42],
+    'Mihail': [15, 65, 29, 57],
+    }
+for name, numbers in favorite_numbers.items():
+    print(f"\n{name}'s favorite numbers:")
+    for number in numbers:
+        print(f"\t{number}")
+
+# 6.11 Cities
+
+cities = {
+    'Krasnoyarsk': {
+        'country': 'Russia',
+        'population': 1_000_000,
+        'fact': 'powerfull',
+        },
+
+    'Chelyabinsk': {
+        'country': 'Russia',
+        'population': 500_000,
+        'fact': 'dirty',
+        },
+
+    'Pskov': {
+        'country': 'Russia',
+        'population': 200_000,
+        'fact': 'beautiful',
+        },
+    }
+
+for city, info in cities.items():
+    print(f"\nCity: {city}")
+    country = f"{info['country']}"
+    population = f"{info['population']}"
+    fact = f"{info['fact']}"
+    print(f"\tCountry: {country}.")
+    print(f"\tPopulation: {population}.")
+    print(f"\tFact: {fact.title()}.")

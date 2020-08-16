@@ -3,7 +3,7 @@ def filter_list(l):
     for number in l:
         if str(number).isdigit() and str(number) != number:
             new_list.append(number)
-    return new_list
+    return new_list  # or [number for number in l if isinstance(number, int)
 
 
 print(filter_list([1,2,'a','b']))

@@ -2,7 +2,7 @@
 
 def read_files(filename):
     try:
-        with open(filename) as f:
+        with open(filename, encoding='utf-8') as f:
             contents = f.read()
     except FileNotFoundError:
         pass
